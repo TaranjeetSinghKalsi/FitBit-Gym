@@ -6,33 +6,209 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FitBit Gym</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <section id="home">
-        <header>
-            <nav class="navbar">
-                <a href="#"><img src="images/logo.png" id="logo" alt="logo" srcset="" /></a>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">PROGRAMS</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <!-- <li><a href="#" class="btn" id="join">JOIN NOW</a></li> -->
-                    <button class="btn" id="join" type="button">JOIN NOW</button>
-                </ul>
-            </nav>
-        </header>
+        <nav class="navbar" id="header">
+            <div>
+                <a href="index.html"> <img id="logo" src="images/logo.png" alt="logo" /></a>
+            </div>
+            <ul id="nav-ul">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#programs">PROGRAMS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#chatbot">QNA</a></li>
+            </ul>
+            <div>
+                <button class="btn" id="join" type="button">JOIN NOW</button>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <div id="main">
+            <main>
+                <h1>JOIN <span>NOW</span></h1>
+                <p><strong>GET IN SHAPE</strong></p>
+                <p>Once you are exercising regularly,</p>
+                <p>the hardest thing is to stop it.</p>
+                <button class="btn" id="home-join" type="button">JOIN NOW</button>
+            </main>
+        </div>
 
-        <main>
-            <h1>JOIN <span>NOW</span></h1>
-            <p>GET IN SHAPE</p>
-            <p>Once you are exercising regularly, the hardest thing is to stop it.</p>
-           <button class="btn" id="home-join" type="button">JOIN NOW</button> 
-        </main>
+    </section>
+
+    <section id="features">
+        <p class="sub-heading">FABULOUS FEATURES</p>
+        <h2 class="heading">WHY YOU JOIN WITH US</h2>
+        <div id="features-grid">
+            <div id="features-left">
+                <div id="features-1" class="features-margin-bottom"
+                    onmouseenter="document.getElementById('feature-icon-1').style.marginLeft='5px';"
+                    onmouseleave="document.getElementById('feature-icon-1').style.marginLeft='0px';">
+                    <div class="features-div">
+                        <div class="features-icons-outer" id="feature-icon-1">
+                            <div class="features-icon-space">
+                                <img class="features-icons" src="images/trainer.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="mini-heading">Qualified Instructors</h3>
+                    <p class="para">
+                        We have well Qualified Trainers that also provides personal
+                        training to help you reach your health and fitness goals easily
+                        and speedily.
+                    </p>
+                </div>
+
+                <div id="features-2" onmouseenter="document.getElementById('feature-icon-2').style.marginLeft='5px';"
+                    onmouseleave="document.getElementById('feature-icon-2').style.marginLeft='0px';">
+                    <div class="features-div">
+                        <div class="features-icons-outer" id="feature-icon-2">
+                            <div class="features-icon-space">
+                                <img class="features-icons" src="images/dumbbell.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="mini-heading">Tons of Quality Equipment</h3>
+                    <p class="para">
+                        We literally have tons of Quality equipment including many
+                        machines, all standard-rods, iron-plates from 1.25kg to 25kg, dumbbells from 2.5kg
+                        to 50kg and many many more.
+                    </p>
+                </div>
+            </div>
+
+            <div id="features-center">
+                <img src="images/girl.jpg" alt="" />
+            </div>
+
+            <div id="features-right">
+                <div id="features-3" class="features-margin-bottom"
+                    onmouseenter="document.getElementById('feature-icon-3').style.marginLeft='5px';"
+                    onmouseleave="document.getElementById('feature-icon-3').style.marginLeft='0px';">
+                    <div class="features-div">
+                        <div class="features-icons-outer" id="feature-icon-3">
+                            <div class="features-icon-space">
+                                <img class="features-icons" src="images/cleaner.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="mini-heading">Hygiene Maintainence</h3>
+                    <p class="para">
+                        We have a team to clean and maintain gym environment and equipment
+                        on a daily basis and they even work while you work-out, to provide
+                        you better hygiene.
+                    </p>
+                </div>
+
+                <div id="features-4" onmouseenter="document.getElementById('feature-icon-4').style.marginLeft='5px';"
+                    onmouseleave="document.getElementById('feature-icon-4').style.marginLeft='0px';">
+                    <div class="features-div">
+                        <div class="features-icons-outer" id="feature-icon-4">
+                            <div class="features-icon-space">
+                                <img class="features-icons" src="images/muscle.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="mini-heading">Happy Members</h3>
+                    <p class="para">
+                        We have happy members that transformed their bodies and are
+                        impressed by our support and guidance in diet and workout.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs">
+        <!-- Fat Loss
+        Strength development
+        Muscle Gain
+        Endurance Training
+    Body Recomposition -->
+        <p class="sub-heading">PRIME PROGRAMS</p>
+        <h2 class="heading">EVERY WORKOUT COUNTS</h2>
+        <p class="para h-para">
+            We have expertise in Fat Loss, Strength Development, Muscle Mass Gain, and Endurance Training.
+        </p>
+        <p class="para h-para mt-0">We can also make Custom Program that best suits your Body.</p>
+        <div id="programs-grid">
+
+            <div class="programs-img-container">
+
+                <img src="images/fat-pro.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h3 class="mini-heading">Fat Loss Program</h3>
+                        <button class="btn mt-1" type="button">JOIN NOW</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="programs-img-container">
+                <img src="images/strength-pro.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h3 class="mini-heading">Strength Development</h3>
+                        <button class="btn mt-1" type="button">JOIN NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="programs-img-container">
+                <img src="images/muscle-pro.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h3 class="mini-heading">Muscle Mass Gain</h3>
+                        <button class="btn mt-1" type="button">JOIN NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="programs-img-container">
+                <img src="images/endurance-pro.jpg" alt="">
+                <div class="overlay">
+                    <div class="overlay-text">
+                        <h3 class="mini-heading">Endurance Training</h3>
+                        <button class="btn mt-1" type="button">JOIN NOW</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="contact">
+        <h2 class="heading">Contact Us</h2>
+        <!-- <div id="contact-div"> -->
+        <form id="contact-div" action="https://formsubmit.co/YourGymEmail@gmail.com" method="POST">
+            <!-- <label for="name">Name</label> -->
+            <input id="name" type="text" name="name" placeholder="Your Name" required>
+            <!-- <label for="email">Email</label> -->
+            <input id="email" type="email" name="email" id="email" placeholder="Your Email" required>
+            <!-- <label for="message">Message</label> -->
+            <textarea name="message" id="message" cols="40" rows="7" placeholder="Enter Your Message Here"
+                required></textarea>
+            <button id="submit" class="btn mt-1" type="submit">Submit</button>
+        </form>
+
+        <!-- </div> -->
+    </section>
+    <!-- Later = Never
+    do it now -->
+    
+    <section id="footer">
+
+        <p>&copy; Copyright All Rights Reserved</p>
+
     </section>
 </body>
+<script src="script.js"></script>
 
 </html>
